@@ -1,0 +1,67 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333;
+  background-color: #f8f9fa;
+
+  margin-left: 55px;
+  margin-right: 50%;/*ajuste de margens*/
+}
+
+/* Cabeçalho Principal (Nome) */
+h1 {
+  font-size: 2.5rem;
+  color: #1a365d; 
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Dados de Contacto */
+.contact-info {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 40px;
+  font-style: normal;
+ 
+}
+
+/* Títulos das Secções Principais */
+h2 {
+  font-size: 1.5rem;
+  color: #2b6cb0; /* Azul médio */
+  border-bottom: 1px solid #042147;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Títulos dos Cargos / Cursos */
+h3 {
+  font-size: 1.15rem;
+  color: #2d3748;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+/* Detalhes de Subtítulo (Datas e Instituições) */
+h3 + p {
+  color: #718096;
+  font-weight: 500;/* Ajuste de peso da fonte */
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+
+ul {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding-left: 30px; /* Ajuste de recuo para listas */
+}
+
+li {
+  margin-bottom: 6px;
+  color: #4a5568;
+}

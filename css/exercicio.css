@@ -1,0 +1,78 @@
+
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular",
+        "Lucida Grande", "Lucida Sans Unicode",
+        Geneva, Verdana, sans-serif;
+
+    background-color: bisque;
+    padding-top: 150px;
+    padding-bottom: 60px;
+}
+
+header {
+    position: fixed; /* Mantém o cabeçalho fixo no topo da página */
+    top: 0;/* Posiciona o cabeçalho no topo da página */
+    left: 0;/* Posiciona o cabeçalho à esquerda da página */
+    
+    width: 100%;/* Faz com que o cabeçalho ocupe toda a largura da página */
+    box-sizing: border-box;/* Adicionado para garantir que o padding não afete a largura total */
+    background-color: bisque;
+    text-align: center;
+    border-bottom: 2px solid #8a95a5;
+    padding: 10px 0;/* Adicionado para dar um espaçamento elegante abaixo da linha */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+header img {
+    width: 50%;
+    height: auto;/* Mantém a proporção da imagem */
+}
+main {
+    margin: 0;
+    max-width: 800px;
+    padding: 10px;
+
+}
+main h1 {
+    color: #09090a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.0em;
+    margin: 10px 0;
+    padding: 20px 0 8px 0; /* Adicionado para criar espaço entre o cabeçalho e o conteúdo */
+}
+main span {
+    background-color: red;
+    color: white;
+}
+
+nav {
+    background-color: gray;
+    padding-top: 10px;
+    margin:0%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #010916;
+}
+
+header a {
+    color: rgb(18, 47, 173);
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    position: fixed;/* Mantém o rodapé fixo na parte inferior da página */
+    bottom: 0;/* Posiciona o rodapé na parte inferior da página */
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #8a95a5;
+    text-align: center;
+    background-color: gray;
+    padding: 5px;
+    margin: 0;
+    border-bottom: 1px solid #8a95a5;
+    z-index: 1000;
+}

@@ -1,0 +1,84 @@
+
+body {
+    font-family: Arial, sans-serif;
+    color: #17264b;
+}
+
+.card1, .card2, .card3 {/* Estilo comum para os três cartões */
+    position: absolute;/* Mantém os cartões posicionados de forma absoluta na página */
+    top: 100px;/* Ajuste de posição vertical para os cartões */
+    width: 280px;
+    height: 290px;
+    border: 3px solid #c7cee0;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: rgb(223, 148, 148);
+    text-align: center;
+    box-sizing: border-box;/* Garante que o padding e a borda sejam incluídos na largura e altura totais */
+}
+
+.card1 {
+    left: 40px;/* Ajuste de margem para a primeira carta */
+}
+
+.card2 {
+    left: 365px;/* Ajuste de margem para a segunda carta */
+}
+
+.card3 {
+    left: 690px; /* Ajuste de margem para a terceira carta */
+}
+.card1 img {
+    position: absolute;/* Mantém a imagem posicionada dentro do cartão */
+    top: 16px;/* Ajuste de posição vertical para a imagem */
+    left: 16px;
+    width: 242px;
+    height: 153px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e5ebf3;
+    object-fit: scale-down;
+}
+
+.card2 img {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 242px;
+    height: 153px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4b7ec0;
+    object-fit: cover;
+}
+
+.card3 img {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 242px;
+    height: 153px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4b7ec0;
+    object-fit: cover;
+}
+
+.card1 h2, .card2 h2, .card3 h2 {
+    position: absolute;
+    top: 175px;
+    left: 0;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 26px;
+}
+
+.card1 p, .card2 p, .card3 p {
+    position: absolute;/* Mantém o parágrafo posicionado dentro do cartão */
+    top: 225px;
+    left: 50px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+}
+

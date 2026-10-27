@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="icon"  type="image/x-icon" href="https://www.cesaedigital.pt/fldrSite/img/cesae-digital-logo.svg ">
 </head>
 <style>
         header {
@@ -13,10 +14,7 @@
             border-bottom: 1px solid #8a95a5;
             padding: 10px 0; /* Adicionado para dar um espaçamento elegante acima da linha */
         }
-        span {
-            background-color: red;
-            color: white;
-        }
+        
         footer {
         
             border-top: 1px solid #8a95a5;
@@ -58,7 +56,7 @@
     <main>
         <h1>Formulário de Inscrição</h1>
 
-        <form action="processar_formulario.php" method="post">
+        <form action="form.html" method="post">
 
             <label for="nome">Nome:</label><br>
             <input type="text" id="nome" name="nome"
@@ -68,14 +66,17 @@
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email">
             <br><br>
-            <h3>Seleciona o teu género:</h3>
+            <label for="data">Data atual:</label><br>
+            <input type="date" id="data" name="data">
+            <br><br>
 
-            
+            <label for="genero">Género:</label><br>
             <label>
                 <input type="radio" name="genero" value="masculino">
                     Masculino
             </label>
             <br>
+
             <label>
                 <input type="radio" name="genero" value="feminino">
                     Feminino
@@ -111,9 +112,7 @@
         <h3> Asossiados</h3>
         <img src="https://www.cesaedigital.pt/fldrSite/img/logo-Pessoas2030.svg " alt="Logo associados" style="width:250px;height:auto;">
         <img src="https://www.cesaedigital.pt/fldrSite/img/logo-PRR.svg " alt="Logo associados" style="width:250px;height:auto;">
-        <img src="https://www.cesaedigital.pt/fldrSite/img/logo-Anqep.svg " alt="Logo associados" style="width: 70px;px;height:auto;">
-        
-        
+        <img src="https://www.cesaedigital.pt/fldrSite/img/logo-Anqep.svg " alt="Logo associados" style="width: 70px;px;height:auto;">       
     </footer>
 </body>
 </html>

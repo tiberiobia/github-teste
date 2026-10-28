@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: row; /* Alinha os itens horizontalmente */
+    row-gap: 20px; /* Espaçamento entre os itens */
+    column-gap: 20px; /* Espaçamento entre as colunas, caso haja */
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda a altura da viewport */
+    width: 100vw; /* Ocupa toda a largura da viewport */
+    border: 10px solid #ccc; /* Adiciona uma borda para visualização */
+}
+
+.box {
+    width: 150px; 
+    height: 150px; /* Altura fixa para cada caixa */
+    margin: 20px 0; /* Adiciona espaçamento vertical entre as caixas */
+    padding: 20px; /* Adiciona espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    flex-direction: row; /* Alinha o conteúdo interno horizontalmente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+}
+#box1 {
+    background-color: #29c0d4; /* Cor de fundo específica para o box 1 */
+}
+#box2 {
+    background-color: #d89e47; /* Cor de fundo específica para o box 2 */
+}
+#box3 {
+    background-color: #e8f5e9; /* Cor de fundo específica para o box 3 */
+}
+#box4 {
+    background-color: #f3e5f5; /* Cor de fundo específica para o box 4 */
+}

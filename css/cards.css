@@ -1,84 +1,77 @@
-
-body {
-    font-family: Arial, sans-serif;
-    color: #17264b;
+/* Configurações Globais */
+body { 
+  font-family: Arial, sans-serif; 
+  color: #17264b; 
+  margin: 0;
+  padding: 20px; /* Espaçamento nas bordas da tela em celulares */
+  background-color: #f4f6f9; /* Um fundo suave para destacar os cards */
 }
 
-.card1, .card2, .card3 {/* Estilo comum para os três cartões */
-    position: absolute;/* Mantém os cartões posicionados de forma absoluta na página */
-    top: 100px;/* Ajuste de posição vertical para os cartões */
-    width: 280px;
-    height: 290px;
-    border: 3px solid #c7cee0;
-    padding: 10px;
-    border-radius: 12px;
-    background-color: rgb(223, 148, 148);
-    text-align: center;
-    box-sizing: border-box;/* Garante que o padding e a borda sejam incluídos na largura e altura totais */
+/* Container dos cartões (Flexbox controla o alinhamento deles) */
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;       /* Faz os cards irem para baixo se não couberem na tela */
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  gap: 45px;             /* Cria o espaçamento exato entre os cartões (substitui o 'left') */
+  margin-top: 100px;     /* Mantém o recuo do topo */
 }
 
-.card1 {
-    left: 40px;/* Ajuste de margem para a primeira carta */
+/* Estilo Base Comum para todos os Cartões */
+.card {
+  /* Controla o fluxo interno do card verticalmente */
+  display: flex; /*se a tela for grande eles ficam lado a lado se nao eles se arrumam no tamanho da tela*/
+  flex-direction: column;
+  align-items: center;
+  
+  width: 280px;
+  height: 290px;
+  border: 3px solid #c7cee0;
+  padding: 16px; /* Ajustado para acomodar o conteúdo sem absolute */
+  border-radius: 12px;
+  background-color: rgb(223, 148, 148);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box; /* Garante que o padding interno não aumente a largura total do card */
+  cursor: pointer;
+  transition: transform 0.2s; /* Efeito suave ao passar o mouse */
 }
 
-.card2 {
-    left: 365px;/* Ajuste de margem para a segunda carta */
+/* Efeito visual ao passar o mouse (Opcional, mas melhora a experiência) */
+.card:hover {
+  transform: translateY(-10px);/* Levanta o card levemente ao passar o mouse */
 }
 
-.card3 {
-    left: 690px; /* Ajuste de margem para a terceira carta */
-}
-.card1 img {
-    position: absolute;/* Mantém a imagem posicionada dentro do cartão */
-    top: 16px;/* Ajuste de posição vertical para a imagem */
-    left: 16px;
-    width: 242px;
-    height: 153px;
-    border: none;
-    border-radius: 10px;
-    background-color: #e5ebf3;
-    object-fit: scale-down;
+/* Estilo das Imagens */
+.card img {
+  width: 100%;       /* Ocupa a largura total disponível do padding interno */
+  height: 153px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4b7ec0; /* Cor padrão (Cards 2 e 3) */
+  object-fit: cover;
+
 }
 
-.card2 img {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    width: 242px;
-    height: 153px;
-    border: none;
-    border-radius: 10px;
-    background-color: #4b7ec0;
-    object-fit: cover;
+
+/* Estilo dos Títulos */
+.card h2 {
+  margin: 15px 0 5px 0; /* Controla o espaçamento superior e inferior */
+  font-size: 26px;
 }
 
-.card3 img {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    width: 242px;
-    height: 153px;
-    border: none;
-    border-radius: 10px;
-    background-color: #4b7ec0;
-    object-fit: cover;
+/* Estilo dos Parágrafos */
+.card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
 }
-
-.card1 h2, .card2 h2, .card3 h2 {
-    position: absolute;
-    top: 175px;
-    left: 0;
-    width: 100%;
-    margin: 10px 0;
-    font-size: 26px;
+/* Ajustes Específicos para Cada Card */
+.card:nth-child(1) img {
+  object-position: top center; 
+}  
+.card:nth-child(2) img {
+  object-position: top center; 
 }
-
-.card1 p, .card2 p, .card3 p {
-    position: absolute;/* Mantém o parágrafo posicionado dentro do cartão */
-    top: 225px;
-    left: 50px;
-    text-align: center;
-    font-size: 16px;
-    line-height: 25px;
+.card:nth-child(3) img {
+  object-position: center 20%; /* Ajusta o eixo vertical milimetricamente */
 }
-
